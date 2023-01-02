@@ -1,0 +1,67 @@
+
+* {
+  --primary-color: #053787;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+
+#nav-header {
+  font-size: 1.25rem;;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  /* align-items: center; */
+}
+
+#nav-section {
+  color: rgb(246, 246, 246);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-image: url('https://64.media.tumblr.com/a77e61f1e789f2ebb22d8d062684c2bf/tumblr_p0168gtRdI1runoqyo9_540.gif');
+  background-size: cover;
+  background-position: center;
+
+}
+
+#nav-header a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: rgb(246, 246, 246);
+}
+
+#nav-header a:hover {
+  border-bottom: 4px solid var(--primary-color);
+}
+
+#nav-section p {
+  font-size: 1.5rem;
+  padding-left: 10%;
+}
+
+#nav-div {
+  grid-area: content;
+  z-index: 777;
+  max-width: 1200px;
+  width: 100%;
+  place-self: start center;
+  padding-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav-section p::before {
+  content: "<";
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+#nav-section p::after {
+  content: "/>";
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: 700;
+}
