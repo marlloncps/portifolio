@@ -1,0 +1,72 @@
+* {
+  --primary-color: #053787;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#aboutme {
+  height: 100vh;
+  background-color: black;
+}
+
+#aboutme_section {
+  max-height: 100%;
+  display: flex;
+  color: white;
+  flex-direction: row;
+}
+
+#aboutme_left-div {
+  max-width: 50%;
+  width: 50%;
+  border: 1px solid red;
+}
+
+#aboutme_left-div p {
+  width: 80%;
+}
+
+#aboutme_summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+}
+
+#aboutme_right-div {
+  width: 50%;
+  max-width: 50%;
+  border: 1px solid blue;
+}
+
+#aboutme h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+  color: var(--primary-color);
+}
+
+#aboutme_skills_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: 65px;
+  gap: 16px;
+}
+
+#aboutme_skills_icon {
+  width: 150px;
+  height: 150px;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: warp;
+  list-style: none;
+}
